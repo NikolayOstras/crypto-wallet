@@ -1,8 +1,6 @@
 import { AuthForm } from '@/components/auth-form/AuthForm'
 
-type Props = {}
-
-const Auth = (props: Props) => {
+const Auth = () => {
 	return (
 		<div className='container'>
 			<h1 className=' text-center  mt-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>

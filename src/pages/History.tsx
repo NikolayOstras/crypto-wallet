@@ -1,8 +1,6 @@
 import Nav from '@/components/Nav'
 
-type Props = {}
-
-const History = (props: Props) => {
+const History = () => {
 	return (
 		<div className='container'>
 			<h1 className='text-center mt-8 text-4xl font-medium tracking-tight lg:text-5xl mb-4'>

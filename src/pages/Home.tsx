@@ -19,7 +19,7 @@ const Home = () => {
 
 	const { balances, isLoading, totalBalanceInUSD } = useBalances()
 	return (
-		<div className='container grid place-items-center '>
+		<div className='container'>
 			{isLoading ? (
 				<LoaderCircle className='animate-spin mt-20' />
 			) : (

@@ -19,7 +19,7 @@ const Home = () => {
 
 	const { balances, isLoading, totalBalanceInUSD } = useBalances()
 	return (
-		<div className='container'>
+		<div className='container h-screen h-dvh'>
 			{isLoading ? (
 				<LoaderCircle className='animate-spin mt-20' />
 			) : (

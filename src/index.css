@@ -8,4 +8,11 @@
 		font-family: 'Inter', sans-serif;
 		font-optical-sizing: auto;
 	}
+	#root {
+		min-height: 100dvh;
+	}
+
+	.container {
+		@apply overflow-hidden;
+	}
 }

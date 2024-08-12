@@ -29,7 +29,7 @@ const Withdraw = () => {
 					<LoaderCircle className='animate-spin' />
 				</div>
 			) : (
-				<div className='flex gap-4'>
+				<div className='flex gap-4 flex-wrap'>
 					<CardSelect
 						cards={state.cards}
 						selectedCard={state.selectedCard || null}
@@ -48,7 +48,7 @@ const Withdraw = () => {
 					value={state.amount || ''}
 					onChange={handleAmountChange}
 					placeholder='Amount'
-					className={`w-[376px] p-2 border outline-none ${
+					className={`max-w-[376px] w-full p-2 border outline-none ${
 						state.error ? 'border-red-500' : 'border-gray-300'
 					} rounded-md w-[376px]`}
 				/>
@@ -65,7 +65,7 @@ const Withdraw = () => {
 					type='text'
 					value={state.amountInUSD.toFixed(2)}
 					readOnly
-					className='border-none w-[376px] bg-gray-50 '
+					className='border-none max-w-[376px] bg-gray-50 w-full'
 				/>
 			</div>
 			<div className='mt-4'>

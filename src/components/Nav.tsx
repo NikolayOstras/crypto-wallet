@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
 const Nav: React.FC = () => {
 	return (
 		<nav className='bg-white p-1 fixed bottom-0 left-0 right-0 border-t border-accent'>
-			<ul className='flex gap-8 items-center justify-center'>
+			<ul className='flex gap-4 items-center justify-center px-3'>
 				{navItems.map(({ path, icon: Icon, label }) => (
 					<li key={path}>
 						<Link

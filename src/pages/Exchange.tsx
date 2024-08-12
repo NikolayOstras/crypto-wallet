@@ -117,7 +117,7 @@ const Exchange = () => {
 				</div>
 			) : (
 				<>
-					<div className='flex gap-4'>
+					<div className='flex gap-4 flex-wrap'>
 						<div>
 							<Label className='mb-4 block font-medium'>What to sell?</Label>
 							<CurrencySelect
@@ -127,7 +127,7 @@ const Exchange = () => {
 							/>
 						</div>
 						<div className='grid place-items-end'>
-							<ArrowRight className='mb-2' />
+							<ArrowRight className='mb-2 hidden md:block' />
 						</div>
 						<div>
 							<Label className='mb-4 block font-medium'>What to get?</Label>
@@ -139,7 +139,7 @@ const Exchange = () => {
 						</div>
 					</div>
 
-					<div>
+					<div className='mt-2'>
 						<Label className='mb-4 block'>How many?</Label>
 						<Input
 							min={0}
@@ -147,9 +147,9 @@ const Exchange = () => {
 							value={state.amount || ''}
 							onChange={handleAmountChange}
 							placeholder='Amount'
-							className={`w-[376px] p-2 border outline-none ${
+							className={`  max-w-[376px] p-2 border outline-none ${
 								state.error ? 'border-red-500' : 'border-gray-300'
-							} rounded-md w-[376px]`}
+							} rounded-md`}
 						/>
 						{state.error && (
 							<p className='text-red-500 text-xs mt-1'>{state.error}</p>
@@ -161,7 +161,7 @@ const Exchange = () => {
 							type='text'
 							value={state.amountGet.toFixed(6)}
 							readOnly
-							className='w-[376px] border-none  bg-gray-50 '
+							className='w-full max-w-[376px] border-none  bg-gray-50 '
 						/>
 					</div>
 
